@@ -1,32 +1,49 @@
-import './style.css'
+import './style.css' 
+import { supabase } from './supabase.js'
+import { renderHome } from './pages/home.js'
+import { renderAuth } from './pages/auth.js'
+import { renderDashboard } from './pages/dashboard.js'
 
-document.querySelector('#app').innerHTML = `
-<div class="app-container">
-  <nav class="navbar">
-    <div class="logo">
-      <span class="logo-text">Nasa Fact</span>
-    </div>
-    <button id="login-btn" class="login-btn">Log In</button>
-  </nav>
+const appDiv = document.querySelector('#app')
 
-  <main class="hero">
-    <div>
-      <p class="subtitle">Welcome Explorer</p>
-      <h2 class="hero-h2">Discover the Universe</h2>
 
-      <p class="description">
-        Unlock daily space Facts, explore the cosmos, and expand your mind. Log in to start your journey through the stars.
-      </p>
-
-      <button id="hero-login-btn" class="primary-btn">Log In to Explore</button>
-    <div>
-  </main>
-</div>
-`
-
-const handleLoginClick = () => {
-  console.log('Login triggered! Time to show the auth screen.')
+export const navigate = (path) => {
+  window.history.pushState({}, '', path)
+  handleRoute()
 }
 
-document.querySelector('#login-btn').addEventListener('click', handleLoginClick)
-document.querySelector('#hero-login-btn').addEventListener('click', handleLoginClick)
+window.addEventListener('popstate', handleRoute)
+
+async function handleRoute() {
+  let session = null
+  try {
+    const { data: { session: authSession } } = await supabase.auth.getSession()
+    session = authSession
+  } catch (error) {
+    console.error('Auth error:', error)
+  }
+  
+  const path = window.location.pathname
+
+  if (path === '/dash') {
+    if (session) {
+      renderDashboard(appDiv, navigate, session.user)
+    } else {
+      navigate('/') 
+    }
+  } else if (path === '/auth') {
+    if (session) {
+      navigate('/dash')
+    } else {
+      renderAuth(appDiv, navigate)
+    }
+  } else {
+    renderHome(appDiv, navigate)
+  }
+}
+
+handleRoute()
+
+supabase.auth.onAuthStateChange((_event, session) => {
+  handleRoute()
+})

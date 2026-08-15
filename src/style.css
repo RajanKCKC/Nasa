@@ -23,7 +23,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 5%;
-  background: rgba(12, 16, 29, 0.4);
+  background: rgba(13, 17, 30, 0.4);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -32,8 +33,37 @@ body {
   font-weight: 700;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.8rem;
   color: #ffffff;
+}
+
+.nasa-logo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+.user-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.4rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: help;
+  transition: background 0.2s ease;
+}
+
+.profile-icon:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .login-btn {
@@ -51,38 +81,6 @@ body {
 .login-btn:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: #ffffff;
-}
-
-.hero {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-}
-
-.subtitle {
-  color: #4ea8de;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-}
-
-.hero-h2 {
-  margin-top: 0;
-  color: #ffffff;
-  font-size: 2.5rem;
-  margin-bottom: 1.2rem;
-  line-height: 1.2;
-}
-
-.description {
-  font-size: 1.15rem;
-  line-height: 1.6;
-  color: #cbd5e1;
-  margin-bottom: 2.5rem;
 }
 
 .primary-btn {
@@ -105,4 +103,112 @@ body {
 
 .primary-btn:active {
   transform: scale(0.98);
+}
+
+.secondary-btn {
+  background: transparent;
+  color: #cbd5e1;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.glass-card {
+  background: rgba(17, 24, 39, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 3.5rem 2.5rem;
+  max-width: 550px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.subtitle {
+  color: #4ea8de; 
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.glass-card h2 {
+  margin-top: 0;
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+}
+
+.hero-description, .fact-content {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin-bottom: 2.5rem;
+}
+
+.auth-card {
+  max-width: 400px;
+  padding: 2.5rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.input-field {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-field::placeholder {
+  color: #94a3b8;
+}
+
+.input-field:focus {
+  border-color: #4ea8de;
+  box-shadow: 0 0 0 3px rgba(78, 168, 222, 0.2);
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.error-msg {
+  color: #ef4444;
+  font-size: 0.9rem;
+  min-height: 1.2rem;
+  margin: 0;
+  text-align: left;
 }
