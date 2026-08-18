@@ -14,10 +14,10 @@ export const renderAuth = (appDiv, navigate) => {
       <main class="hero">
         <div class="glass-card auth-card">
           <h2>Access Port</h2>
-          <p class="hero-description">Enter your credentials to continue.</p>
+          <p class="hero-description">Enter your credentials to continue. <br> <i>Note: If you dont have a account then click <b>Create Account</b> button and It has rate limit.</i></p>
           
           <form id="auth-form" class="auth-form">
-            <input type="email" id="email" class="input-field" placeholder="Email Address" required />
+            <input type="email" id="email" class="input-field" placeholder="Email Address (Working Temp Mail)" required />
             <input type="password" id="password" class="input-field" placeholder="Password" required />
             <p id="auth-error" class="error-msg"></p>
             

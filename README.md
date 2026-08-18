@@ -3,7 +3,7 @@
 It is a webpage where you can read real things about space and big planets.
 
 
-**[click here to play with my space page](https://rajankckc.github.io/Nasa/)**
+**[click here to play with my space page](https://nasa-ten-ecru.vercel.app/)**
 
 ### How to start
 

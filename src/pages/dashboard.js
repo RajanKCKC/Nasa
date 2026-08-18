@@ -27,6 +27,78 @@ const fallbackFact = [
     date: '2024-01-16',
     url: 'https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000889/GSFC_20171208_Archive_e000889~orig.jpg',
     explanation: 'The Orion Nebula is a stellar nursery where new stars are forming inside vast clouds of gas and dust.'
+  },
+  {
+    title: 'API ERROR',
+    date: 'Now',
+    url: 'https://thumbs.dreamstime.com/b/error-rubber-stamp-word-error-inside-illustration-109026446.jpg',
+    explanation: 'If you are seeing this then the Nasa api is not working this is not this website problem.'
+  },
+  {
+    title: 'API ERROR',
+    date: 'Now',
+    url: 'https://thumbs.dreamstime.com/b/error-rubber-stamp-word-error-inside-illustration-109026446.jpg',
+    explanation: 'If you are seeing this then the Nasa api is not working this is not this website problem.'
+  },
+  {
+    title: 'API ERROR',
+    date: 'Now',
+    url: 'https://thumbs.dreamstime.com/b/error-rubber-stamp-word-error-inside-illustration-109026446.jpg',
+    explanation: 'If you are seeing this then the Nasa api is not working this is not this website problem.'
+  },
+  {
+    title: 'API ERROR',
+    date: 'Now',
+    url: 'https://thumbs.dreamstime.com/b/error-rubber-stamp-word-error-inside-illustration-109026446.jpg',
+    explanation: 'If you are seeing this then the Nasa api is not working this is not this website problem.'
+  },
+  {
+    title: 'API ERROR',
+    date: 'Now',
+    url: 'https://thumbs.dreamstime.com/b/error-rubber-stamp-word-error-inside-illustration-109026446.jpg',
+    explanation: 'If you are seeing this then the Nasa api is not working this is not this website problem.'
+  },
+  {
+    title: 'API ERROR',
+    date: 'Now',
+    url: 'https://thumbs.dreamstime.com/b/error-rubber-stamp-word-error-inside-illustration-109026446.jpg',
+    explanation: 'If you are seeing this then the Nasa api is not working this is not this website problem.'
+  },
+  {
+    title: 'API ERROR',
+    date: 'Now',
+    url: 'https://thumbs.dreamstime.com/b/error-rubber-stamp-word-error-inside-illustration-109026446.jpg',
+    explanation: 'If you are seeing this then the Nasa api is not working this is not this website problem.'
+  },
+  {
+    title: 'API ERROR',
+    date: 'Now',
+    url: 'https://thumbs.dreamstime.com/b/error-rubber-stamp-word-error-inside-illustration-109026446.jpg',
+    explanation: 'If you are seeing this then the Nasa api is not working this is not this website problem.'
+  },
+  {
+    title: 'API ERROR',
+    date: 'Now',
+    url: 'https://thumbs.dreamstime.com/b/error-rubber-stamp-word-error-inside-illustration-109026446.jpg',
+    explanation: 'If you are seeing this then the Nasa api is not working this is not this website problem.'
+  },
+  {
+    title: 'API ERROR',
+    date: 'Now',
+    url: 'https://thumbs.dreamstime.com/b/error-rubber-stamp-word-error-inside-illustration-109026446.jpg',
+    explanation: 'If you are seeing this then the Nasa api is not working this is not this website problem.'
+  },
+  {
+    title: 'API ERROR',
+    date: 'Now',
+    url: 'https://thumbs.dreamstime.com/b/error-rubber-stamp-word-error-inside-illustration-109026446.jpg',
+    explanation: 'If you are seeing this then the Nasa api is not working this is not this website problem.'
+  },
+  {
+    title: 'API ERROR',
+    date: 'Now',
+    url: 'https://thumbs.dreamstime.com/b/error-rubber-stamp-word-error-inside-illustration-109026446.jpg',
+    explanation: 'If you are seeing this then the Nasa api is not working this is not this website problem.'
   }
 ]
 
